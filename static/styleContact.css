@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Gluten:wght@100&family=Michroma&family=Permanent+Marker&family=Sedgwick+Ave+Display&display=swap');
+
+h1{
+    text-align: center;
+    margin: 15px 0px;
+    font-family: 'DynaPuff', cursive;
+    color: #170105;
+}
+
+body::before{
+    content: "";
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    opacity: 0.65;
+    top: 0px;
+    position: absolute;
+    background: center/cover no-repeat url("/static/bg07.jpg");
+}
+
+.container{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.myInput{
+    font-size: 15px;
+    font-family: 'Neucha', cursive;
+    border: 2px solid rgb(119, 85, 85);
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px;
+    margin: 10px;
+    outline: none;
+}
+
+.button{
+    margin: 15px 0px;
+    padding: 12px 15px;
+    font-size: 20px;
+    border: 2px solid rgb(60, 27, 27);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'DynaPuff', cursive;
+    color: whitesmoke;
+    background-color: rgb(57, 31, 31);
+}
+.button:hover{
+    font-weight: bold;
+    color: cornsilk;
+}

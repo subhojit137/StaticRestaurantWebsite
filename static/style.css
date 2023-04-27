@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Gluten:wght@100&family=Michroma&family=Permanent+Marker&family=Sedgwick+Ave+Display&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+/* LOGO SECTION */
+#logo{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: -5px 14px;
+}
+#logo img{
+    height: 45px;
+    /* filter: invert(1); */
+}
+
+/* NAV BAR SECTION */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0PX;
+    background-color: rgb(165, 163, 163);
+    /* background-color: rgb(96, 85, 85); */
+    padding: 14px 15px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0PX;
+    left: 0PX;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Michroma', sans-serif;
+}
+#navbar li a:hover{
+    color: lightyellow;
+    font-weight: bold;
+}
+
+/* HOME SECTION */
+#home{
+    color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Neucha', cursive;
+    font-size: 2.8rem;
+    flex-direction: column;
+    background: center/cover no-repeat url('/static/bg04.jpg');
+    height: 450px;
+    width: 100%;
+    background-color: lightpink;
+    opacity: 0.85;
+    z-index: -2;
+    padding: 10px;
+}
+
+/* SERVICES SECTION */
+.services{
+    background-color: whitesmoke;
+}
+#card{
+    margin: 14px;
+    display: flex;
+}
+#services .card-box{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 3px 6px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+#services .card-box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .card-box h3{
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+#services .card-box p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Neucha', cursive;
+}
+
+/* JOIN-US OR ABOUT US SECTION */
+#aboutUs{
+    height: 425px;
+    /* background-color: lightgreen; */
+    font-family: 'Gluten', cursive;
+}
+#aboutUs::before{
+    content: "";
+    position: absolute;
+    background: center/cover no-repeat url('/static/bg06.jpg');
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#joinUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialMedia{
+    padding: 13px;
+    margin: 3px 6px;
+}
+#joinUs img{
+    height: 350px;
+    width: 700px;
+    /* border: 2px solid brown; */
+    /* border-radius: 15px; */
+}
+
+/* CONTACT SECTION */
+
+/* FOOTER SECTIOIN */
+#footer{
+    height: 40px;
+    color: whitesmoke;
+    background-color: black;
+    font-family: 'Michroma', sans-serif;
+    text-align: center;
+    padding: 9px 20px;
+}
+
+/* UTILITY CLASS */
+.card{
+    display: inline-block;
+    background-color: lightcyan;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 23%;
+    margin: 8px 15px;
+    height: 350px;
+}
+.h-primary{
+    font-size: 4.0rem;
+    font-family: 'DynaPuff', cursive;
+    color: lightcoral;
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+}
+.h-secondary{
+    text-align: center;
+    font-family: 'Gluten', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
+.btn{
+        color: aliceblue;
+        background-color: rgb(57, 37, 37);
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 25px 10px;
+        padding: 5px 10px;
+        font-family: 'Neucha', cursive;
+        font-size: 25px;
+        cursor: pointer;
+    }
+.btn:hover{
+    background-color: rgb(63, 25, 25);
+}    
+.center{
+    text-align: center;
+}

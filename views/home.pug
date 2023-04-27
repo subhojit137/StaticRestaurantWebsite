@@ -1,0 +1,41 @@
+extends base.pug 
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style
+            include ../static/style.css 
+
+block content 
+        
+    section#home
+        h2.h-primary  Life is all about 3B's- Big Bite Burger
+        h4.h-secondary So what are you waiting for? Let's order now!
+        button.btn Order Now
+    
+    section#services 
+        h2.h-secondary Our Services
+        div#card 
+            div.card-box 
+                img(src="/static/bg01.jpg", alt="", srcset="")
+                h3.center Chessy Humburger
+                p Don't miss our special fresh chessy humburger at resonable price.   
+            div.card-box 
+                img(src="/static/card02.jpg", alt="", srcset="")
+                h3.center Complete Combo pack
+                p Take a complete meal with our special combo pack. 
+            div.card-box 
+                img(src="/static/card04.jpg", alt="", srcset="")
+                h3.center Burger with Fried Chiken
+                p It would be your evening snacks today! So why late? Just bring it. 
+            div.card-box 
+                img(src="/static/card03.jpg", alt="", srcset="")
+                h3.center Fast Delivery
+                p Busy with your works? Don't worry we would deliver your favourite food within few mins. 
+    
+    section#aboutUs 
+        h2.h-secondary You can join or follow us on 
+        div#joinUs
+            div.socialmedia 
+                img(src="/static/allid.webp", alt="", srcset="")
